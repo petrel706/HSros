@@ -1,0 +1,10 @@
+/**:
+  ros__parameters:
+    planner_configs:
+      RRTConnectkConfigDefault:
+        type: geometric::RRTConnect
+        range: 0.2
+
+    arm:
+      planner_configs:
+        - RRTConnectkConfigDefault

@@ -1,0 +1,160 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4fc9f96ccef7f8ebc273.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "hsr_socket_driver",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "demo_cartesian_move_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-demo_cartesian_move_node-49abe3da01bd976bbfca.json",
+					"name" : "demo_cartesian_move_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "demo_comm_api_training_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-demo_comm_api_training_node-698ee9a9927381be3017.json",
+					"name" : "demo_comm_api_training_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "demo_sys_alarm_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-demo_sys_alarm_node-e2069131a22160347912.json",
+					"name" : "demo_sys_alarm_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "demo_training_jog_home_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-demo_training_jog_home_node-6a1e1c40ce90738b9540.json",
+					"name" : "demo_training_jog_home_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "demo_training_jog_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-demo_training_jog_node-5a90d13dc02d20f1237b.json",
+					"name" : "demo_training_jog_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "demo_training_jog_single_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-demo_training_jog_single_node-3d300a7afb2f7049d4ca.json",
+					"name" : "demo_training_jog_single_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "demo_training_move_joint_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-demo_training_move_joint_node-6d8ec9f183ac488f5165.json",
+					"name" : "demo_training_move_joint_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hsr_hsc3_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hsr_hsc3_client-fe881c2c860cbfcb1943.json",
+					"name" : "hsr_hsc3_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hsr_socket_driver_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hsr_socket_driver_node-0bea04052f7324efdf91.json",
+					"name" : "hsr_socket_driver_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hsr_socket_driver_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hsr_socket_driver_uninstall-811491d566acaf02059a.json",
+					"name" : "hsr_socket_driver_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_teleop_joint_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_teleop_joint_node-dcc1b60f9a9e13b196e6.json",
+					"name" : "keyboard_teleop_joint_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e17e67071e78277d7e64.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver",
+		"source" : "/home/huashu/co_605_arm/Hsc3DemoLinux/hsr_socket_driver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

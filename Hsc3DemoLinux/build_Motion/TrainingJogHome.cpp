@@ -52,7 +52,8 @@ static int run_training_jog_home()
         return 2;
     }
 
-    std::cout << "Move to HOME (Joint) J1..J6=[-5.44e-05, -90.0001, 89.9999, -89.9999, 90.0001, -0.0001632]" << std::endl;
+    std::cout << "Move to HOME (Joint) J1..J6=[-5.44e-05, -90.0001, 89.9999, -89.9999, 90.0001, +45.001]" << std::endl;
+    
     if (!moveToHomeJoint(pMot, kGpId))
     {
         std::cout << "move home failed" << std::endl;
@@ -105,7 +106,7 @@ static bool moveToHomeJoint(Hsc3::Proxy::ProxyMotion & pMot, int8_t gpId)
     target[2] = 89.9999;
     target[3] = -89.9999;
     target[4] = 90.0001;
-    target[5] = -0.0001632;
+    target[5] = -40.002;
 
     (void)ensureJointLimitAllowsHome(pMot, gpId, target);
 

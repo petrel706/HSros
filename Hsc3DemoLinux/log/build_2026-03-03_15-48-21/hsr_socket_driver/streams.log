@@ -1,0 +1,120 @@
+[0.009s] Invoking command in '/home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/huashu/co_605_arm/Hsc3DemoLinux/hsr_socket_driver -DCMAKE_INSTALL_PREFIX=/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver
+[0.059s] -- The C compiler identification is GNU 11.4.0
+[0.103s] -- The CXX compiler identification is GNU 11.4.0
+[0.108s] -- Detecting C compiler ABI info
+[0.170s] -- Detecting C compiler ABI info - done
+[0.175s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.175s] -- Detecting C compile features
+[0.175s] -- Detecting C compile features - done
+[0.178s] -- Detecting CXX compiler ABI info
+[0.248s] -- Detecting CXX compiler ABI info - done
+[0.253s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.253s] -- Detecting CXX compile features
+[0.253s] -- Detecting CXX compile features - done
+[0.255s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.381s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.447s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.475s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.478s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.485s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.494s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.506s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.537s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.539s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.612s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.631s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.660s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.665s] -- Looking for pthread.h
+[0.734s] -- Looking for pthread.h - found
+[0.735s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.809s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.810s] -- Found Threads: TRUE  
+[0.846s] -- Found rclcpp_action: 16.0.18 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.868s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.889s] -- Found trajectory_msgs: 4.9.1 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[0.901s] -- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+[0.971s] -- Configuring done
+[1.003s] -- Generating done
+[1.015s] -- Build files have been written to: /home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver
+[1.023s] Invoked command in '/home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/huashu/co_605_arm/Hsc3DemoLinux/hsr_socket_driver -DCMAKE_INSTALL_PREFIX=/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver
+[1.025s] Invoking command in '/home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver -- -j16 -l16
+[1.072s] [  5%] [32mBuilding CXX object CMakeFiles/keyboard_teleop_joint_node.dir/src/keyboard_teleop_joint_node.cpp.o[0m
+[1.073s] [ 10%] [32mBuilding CXX object CMakeFiles/hsr_hsc3_client.dir/src/hsc3_client.cpp.o[0m
+[1.556s] [ 15%] [32m[1mLinking CXX static library libhsr_hsc3_client.a[0m
+[1.589s] [ 15%] Built target hsr_hsc3_client
+[1.608s] [ 20%] [32mBuilding CXX object CMakeFiles/hsr_socket_driver_node.dir/src/hsr_socket_driver_node.cpp.o[0m
+[1.610s] [ 25%] [32mBuilding CXX object CMakeFiles/demo_comm_api_training_node.dir/src/demo_comm_api_training_node.cpp.o[0m
+[1.610s] [ 30%] [32mBuilding CXX object CMakeFiles/demo_training_jog_single_node.dir/src/demo_training_jog_single_node.cpp.o[0m
+[1.611s] [ 35%] [32mBuilding CXX object CMakeFiles/demo_training_move_joint_node.dir/src/demo_training_move_joint_node.cpp.o[0m
+[1.611s] [ 40%] [32mBuilding CXX object CMakeFiles/demo_sys_alarm_node.dir/src/demo_sys_alarm_node.cpp.o[0m
+[1.612s] [ 50%] [32mBuilding CXX object CMakeFiles/demo_cartesian_move_node.dir/src/demo_cartesian_move_node.cpp.o[0m
+[1.612s] [ 50%] [32mBuilding CXX object CMakeFiles/demo_training_jog_home_node.dir/src/demo_training_jog_home_node.cpp.o[0m
+[1.612s] [ 55%] [32mBuilding CXX object CMakeFiles/demo_training_jog_node.dir/src/demo_training_jog_node.cpp.o[0m
+[4.527s] [ 60%] [32m[1mLinking CXX executable demo_training_jog_node[0m
+[4.694s] [ 60%] Built target demo_training_jog_node
+[5.367s] [ 65%] [32m[1mLinking CXX executable demo_comm_api_training_node[0m
+[5.489s] [ 65%] Built target demo_comm_api_training_node
+[5.714s] [ 70%] [32m[1mLinking CXX executable demo_sys_alarm_node[0m
+[5.859s] [ 70%] Built target demo_sys_alarm_node
+[6.002s] [ 75%] [32m[1mLinking CXX executable demo_cartesian_move_node[0m
+[6.130s] [ 75%] Built target demo_cartesian_move_node
+[7.450s] [ 80%] [32m[1mLinking CXX executable hsr_socket_driver_node[0m
+[7.537s] [ 85%] [32m[1mLinking CXX executable demo_training_jog_home_node[0m
+[7.710s] [ 85%] Built target hsr_socket_driver_node
+[7.731s] [ 85%] Built target demo_training_jog_home_node
+[7.952s] [ 90%] [32m[1mLinking CXX executable demo_training_move_joint_node[0m
+[8.127s] [ 90%] Built target demo_training_move_joint_node
+[9.655s] [ 95%] [32m[1mLinking CXX executable keyboard_teleop_joint_node[0m
+[10.061s] [ 95%] Built target keyboard_teleop_joint_node
+[11.176s] [100%] [32m[1mLinking CXX executable demo_training_jog_single_node[0m
+[11.538s] [100%] Built target demo_training_jog_single_node
+[11.550s] Invoked command in '/home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver -- -j16 -l16
+[11.562s] Invoking command in '/home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver
+[11.571s] -- Install configuration: ""
+[11.571s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/libCommApi.so
+[11.572s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/libHsc3Api.so
+[11.572s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/libLogApi.so
+[11.573s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/libhsr_hsc3_client.a
+[11.573s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/hsr_socket_driver_node
+[11.574s] -- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/hsr_socket_driver_node" to "$ORIGIN/.."
+[11.575s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_comm_api_training_node
+[11.575s] -- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_comm_api_training_node" to "$ORIGIN/.."
+[11.575s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_training_jog_node
+[11.575s] -- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_training_jog_node" to "$ORIGIN/.."
+[11.575s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_training_jog_single_node
+[11.577s] -- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_training_jog_single_node" to "$ORIGIN/.."
+[11.578s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_training_jog_home_node
+[11.578s] -- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_training_jog_home_node" to "$ORIGIN/.."
+[11.578s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_training_move_joint_node
+[11.579s] -- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_training_move_joint_node" to "$ORIGIN/.."
+[11.579s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_cartesian_move_node
+[11.579s] -- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_cartesian_move_node" to "$ORIGIN/.."
+[11.579s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_sys_alarm_node
+[11.579s] -- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_sys_alarm_node" to "$ORIGIN/.."
+[11.579s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/keyboard_teleop_joint_node
+[11.582s] -- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/keyboard_teleop_joint_node" to ""
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/include
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/include/hsr_socket_driver
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/include/hsr_socket_driver/hsc3_client.hpp
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/launch
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/launch/driver.launch.py
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/launch/__pycache__
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/launch/__pycache__/driver.launch.cpython-310.pyc
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/config
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/config/driver.yaml
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/ament_index/resource_index/package_run_dependencies/hsr_socket_driver
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/ament_index/resource_index/parent_prefix_path/hsr_socket_driver
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/environment/ament_prefix_path.sh
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/environment/ament_prefix_path.dsv
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/environment/path.sh
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/environment/path.dsv
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/local_setup.bash
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/local_setup.sh
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/local_setup.zsh
+[11.582s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/local_setup.dsv
+[11.583s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/package.dsv
+[11.583s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/ament_index/resource_index/packages/hsr_socket_driver
+[11.583s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/cmake/hsr_socket_driverConfig.cmake
+[11.583s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/cmake/hsr_socket_driverConfig-version.cmake
+[11.583s] -- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/package.xml
+[11.585s] Invoked command in '/home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver

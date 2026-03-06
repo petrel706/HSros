@@ -1,0 +1,4 @@
+source;share/hsr_moveit_config/local_setup.bash
+source;share/hsr_moveit_config/local_setup.dsv
+source;share/hsr_moveit_config/local_setup.sh
+source;share/hsr_moveit_config/local_setup.zsh

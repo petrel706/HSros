@@ -1,0 +1,63 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Name: Tool Properties
+  - Class: rviz_common/Views
+    Name: Views
+  - Class: rviz_common/Time
+    Name: Time
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 160
+      Enabled: true
+      Name: Grid
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: world
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: false
+      Frame Timeout: 15
+    - Class: rviz_default_plugins/RobotModel
+      Enabled: true
+      Name: RobotModel
+      Robot Description: robot_description
+    - Class: moveit_rviz_plugin/MotionPlanning
+      Enabled: true
+      Name: MotionPlanning
+      Planning Scene Topic: /planning_scene
+      Robot Description: robot_description
+      Robot Description Semantic: robot_description_semantic
+      Move Group Namespace: ""
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: world
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+    - Class: rviz_default_plugins/SetInitialPose
+    - Class: rviz_default_plugins/SetGoal
+  Value: true
+Views:
+  Current:
+    Class: rviz_default_plugins/Orbit
+    Distance: 1.5
+    Focal Point: 0; 0; 0.3
+    Pitch: 0.5
+    Yaw: 0.8
+

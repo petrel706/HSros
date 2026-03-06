@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot name="S100_diff_arm_robot">
+  <virtual_joint name="world_joint" type="fixed" parent_frame="world" child_link="base_link"/>
+
+  <group name="arm">
+    <chain base_link="arm_base_link" tip_link="pick_gripper_link"/>
+  </group>
+
+  <group_state name="home" group="arm">
+    <joint name="joint_1" value="0"/>
+    <joint name="joint_2" value="0"/>
+    <joint name="joint_3" value="0"/>
+    <joint name="joint_4" value="0"/>
+    <joint name="joint_5" value="0"/>
+    <joint name="joint_6" value="0"/>
+  </group_state>
+</robot>
+

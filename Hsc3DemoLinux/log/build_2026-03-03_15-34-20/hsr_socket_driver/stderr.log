@@ -1,0 +1,6 @@
+[31mCMake Error at CMakeLists.txt:29 (message):
+  Cannot find CommApi.h under
+  HSC3API_ROOT='/home/huashu/co_605_arm/Hsc3DemoLinux/hsr_socket_driver/third_party/Hsc3Api'.
+  Please set -DHSC3API_ROOT=/path/to/Hsc3Api
+
+[0m

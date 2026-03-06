@@ -252,25 +252,40 @@ static bool moveJointRelativeDeg(Hsc3::Proxy::ProxyMotion & pMot, int8_t gpId, i
         return false;
     }
 
-    JntData target = cur;
-    target[static_cast<size_t>(axis)] += deltaDeg;
+    const double startPos = cur[static_cast<size_t>(axis)];
+    DirectType direction = (deltaDeg > 0) ? POSITIVE : NEGATIVE;
+    const double absDelta = (deltaDeg > 0) ? deltaDeg : -deltaDeg;
 
-    GeneralPos p;
-    p.isJoint = true;
-    p.ufNum = -1;
-    p.utNum = -1;
-    p.config = 0;
-    p.vecPos = target;
-
-    const auto r2 = pMot.moveTo(gpId, p, false);
+    const auto r2 = pMot.startJog(gpId, axis, direction);
     if (r2 != 0)
     {
-        std::cout << "moveTo failed, ret=" << static_cast<unsigned long long>(r2) << std::endl;
+        std::cout << "startJog failed, ret=" << static_cast<unsigned long long>(r2) << std::endl;
         return false;
     }
 
-    waitDone(pMot);
-    return true;
+    const int maxLoops = 1000;
+    bool reached = false;
+    
+    for (int i = 0; i < maxLoops; ++i)
+    {
+        usleep(50 * 1000);
+        
+        JntData current;
+        if (pMot.getJntData(gpId, current) == 0 && static_cast<size_t>(axis) < current.size())
+        {
+            const double currentPos = current[static_cast<size_t>(axis)];
+            const double moved = (direction == POSITIVE) ? (currentPos - startPos) : (startPos - currentPos);
+            
+            if (moved >= absDelta - 0.5)
+            {
+                reached = true;
+                break;
+            }
+        }
+    }
+
+    pMot.stopJog(gpId);
+    return reached;
 }
 
 /************************************************************************/

@@ -1,0 +1,244 @@
+[0.000000] (-) TimerEvent: {}
+[0.000607] (-) JobUnselected: {'identifier': 'hsr_moveit_config'}
+[0.000665] (hsr_socket_driver) JobQueued: {'identifier': 'hsr_socket_driver', 'dependencies': OrderedDict()}
+[0.000867] (hsr_socket_driver) JobStarted: {'identifier': 'hsr_socket_driver'}
+[0.006416] (hsr_socket_driver) JobProgress: {'identifier': 'hsr_socket_driver', 'progress': 'cmake'}
+[0.006916] (hsr_socket_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/huashu/co_605_arm/Hsc3DemoLinux/hsr_socket_driver', '-DCMAKE_INSTALL_PREFIX=/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver'], 'cwd': '/home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'huashu'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/windsurf/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib:/home/huashu/co_605_arm/Hsc3DemoLinux/Hsc3Api/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/huashu/co_605_arm/Hsc3DemoLinux/Hsc3Api/lib:'), ('HOME', '/home/huashu'), ('CHROME_DESKTOP', 'windsurf.desktop'), ('OLDPWD', '/home/huashu'), ('TERM_PROGRAM_VERSION', '1.108.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/windsurf.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/windsurf/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/windsurf/windsurf'), ('MANAGERPID', '1219'), ('SYSTEMD_EXEC_PID', '1721'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '16350'), ('COLCON_PREFIX_PATH', '/home/huashu/co_605_arm/Hsc3DemoLinux/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'huashu'), ('JOURNAL_STREAM', '8:1561'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'huashu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDSURF_CASCADE_TERMINAL_KIND', 'inherit'), ('WINDOWPATH', '2'), ('WINDSURF_CASCADE_TERMINAL', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/huashu-Dell-G15-5520:@/tmp/.ICE-unix/1684,unix/huashu-Dell-G15-5520:/tmp/.ICE-unix/1684'), ('INVOCATION_ID', 'd64633420f004ed6bbd625321ee939cd'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8e36734391.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver:/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_moveit_config:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver:/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_moveit_config:/opt/ros/humble')]), 'shell': False}
+[0.059911] (hsr_socket_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099772] (-) TimerEvent: {}
+[0.103500] (hsr_socket_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.108988] (hsr_socket_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.170905] (hsr_socket_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.175649] (hsr_socket_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.175872] (hsr_socket_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.176030] (hsr_socket_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.178316] (hsr_socket_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199871] (-) TimerEvent: {}
+[0.248482] (hsr_socket_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.253450] (hsr_socket_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.253693] (hsr_socket_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.253976] (hsr_socket_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.255415] (hsr_socket_driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299995] (-) TimerEvent: {}
+[0.381649] (hsr_socket_driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400125] (-) TimerEvent: {}
+[0.448226] (hsr_socket_driver) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.475798] (hsr_socket_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.479115] (hsr_socket_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.485373] (hsr_socket_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.494269] (hsr_socket_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.500253] (-) TimerEvent: {}
+[0.506212] (hsr_socket_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.537743] (hsr_socket_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.539430] (hsr_socket_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600395] (-) TimerEvent: {}
+[0.612721] (hsr_socket_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.632056] (hsr_socket_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.660543] (hsr_socket_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.665878] (hsr_socket_driver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.700501] (-) TimerEvent: {}
+[0.734941] (hsr_socket_driver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.735487] (hsr_socket_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.800602] (-) TimerEvent: {}
+[0.809443] (hsr_socket_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.810500] (hsr_socket_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.846521] (hsr_socket_driver) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.18 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[0.868965] (hsr_socket_driver) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.890006] (hsr_socket_driver) StdoutLine: {'line': b'-- Found trajectory_msgs: 4.9.1 (/opt/ros/humble/share/trajectory_msgs/cmake)\n'}
+[0.900747] (-) TimerEvent: {}
+[0.901773] (hsr_socket_driver) StdoutLine: {'line': b'-- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[0.971578] (hsr_socket_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.000845] (-) TimerEvent: {}
+[1.004080] (hsr_socket_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[1.015739] (hsr_socket_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver\n'}
+[1.023772] (hsr_socket_driver) CommandEnded: {'returncode': 0}
+[1.024413] (hsr_socket_driver) JobProgress: {'identifier': 'hsr_socket_driver', 'progress': 'build'}
+[1.025317] (hsr_socket_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver', '--', '-j16', '-l16'], 'cwd': '/home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'huashu'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/windsurf/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib:/home/huashu/co_605_arm/Hsc3DemoLinux/Hsc3Api/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/huashu/co_605_arm/Hsc3DemoLinux/Hsc3Api/lib:'), ('HOME', '/home/huashu'), ('CHROME_DESKTOP', 'windsurf.desktop'), ('OLDPWD', '/home/huashu'), ('TERM_PROGRAM_VERSION', '1.108.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/windsurf.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/windsurf/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/windsurf/windsurf'), ('MANAGERPID', '1219'), ('SYSTEMD_EXEC_PID', '1721'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '16350'), ('COLCON_PREFIX_PATH', '/home/huashu/co_605_arm/Hsc3DemoLinux/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'huashu'), ('JOURNAL_STREAM', '8:1561'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'huashu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDSURF_CASCADE_TERMINAL_KIND', 'inherit'), ('WINDOWPATH', '2'), ('WINDSURF_CASCADE_TERMINAL', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/huashu-Dell-G15-5520:@/tmp/.ICE-unix/1684,unix/huashu-Dell-G15-5520:/tmp/.ICE-unix/1684'), ('INVOCATION_ID', 'd64633420f004ed6bbd625321ee939cd'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8e36734391.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver:/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_moveit_config:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver:/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_moveit_config:/opt/ros/humble')]), 'shell': False}
+[1.072998] (hsr_socket_driver) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/keyboard_teleop_joint_node.dir/src/keyboard_teleop_joint_node.cpp.o\x1b[0m\n'}
+[1.073982] (hsr_socket_driver) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/hsr_hsc3_client.dir/src/hsc3_client.cpp.o\x1b[0m\n'}
+[1.100962] (-) TimerEvent: {}
+[1.201312] (-) TimerEvent: {}
+[1.301612] (-) TimerEvent: {}
+[1.401933] (-) TimerEvent: {}
+[1.502238] (-) TimerEvent: {}
+[1.557133] (hsr_socket_driver) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking CXX static library libhsr_hsc3_client.a\x1b[0m\n'}
+[1.589931] (hsr_socket_driver) StdoutLine: {'line': b'[ 15%] Built target hsr_hsc3_client\n'}
+[1.602355] (-) TimerEvent: {}
+[1.608331] (hsr_socket_driver) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/hsr_socket_driver_node.dir/src/hsr_socket_driver_node.cpp.o\x1b[0m\n'}
+[1.610246] (hsr_socket_driver) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/demo_comm_api_training_node.dir/src/demo_comm_api_training_node.cpp.o\x1b[0m\n'}
+[1.610939] (hsr_socket_driver) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/demo_training_jog_single_node.dir/src/demo_training_jog_single_node.cpp.o\x1b[0m\n'}
+[1.611923] (hsr_socket_driver) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/demo_training_move_joint_node.dir/src/demo_training_move_joint_node.cpp.o\x1b[0m\n'}
+[1.612151] (hsr_socket_driver) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/demo_sys_alarm_node.dir/src/demo_sys_alarm_node.cpp.o\x1b[0m\n'}
+[1.612568] (hsr_socket_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/demo_cartesian_move_node.dir/src/demo_cartesian_move_node.cpp.o\x1b[0m\n'}
+[1.612747] (hsr_socket_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/demo_training_jog_home_node.dir/src/demo_training_jog_home_node.cpp.o\x1b[0m\n'}
+[1.612909] (hsr_socket_driver) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/demo_training_jog_node.dir/src/demo_training_jog_node.cpp.o\x1b[0m\n'}
+[1.702464] (-) TimerEvent: {}
+[1.802789] (-) TimerEvent: {}
+[1.903114] (-) TimerEvent: {}
+[2.003510] (-) TimerEvent: {}
+[2.103906] (-) TimerEvent: {}
+[2.204233] (-) TimerEvent: {}
+[2.304764] (-) TimerEvent: {}
+[2.405172] (-) TimerEvent: {}
+[2.505612] (-) TimerEvent: {}
+[2.606151] (-) TimerEvent: {}
+[2.706679] (-) TimerEvent: {}
+[2.807590] (-) TimerEvent: {}
+[2.907908] (-) TimerEvent: {}
+[3.008273] (-) TimerEvent: {}
+[3.108570] (-) TimerEvent: {}
+[3.208887] (-) TimerEvent: {}
+[3.310440] (-) TimerEvent: {}
+[3.410804] (-) TimerEvent: {}
+[3.511265] (-) TimerEvent: {}
+[3.611616] (-) TimerEvent: {}
+[3.711999] (-) TimerEvent: {}
+[3.812343] (-) TimerEvent: {}
+[3.912749] (-) TimerEvent: {}
+[4.013335] (-) TimerEvent: {}
+[4.113732] (-) TimerEvent: {}
+[4.214478] (-) TimerEvent: {}
+[4.314803] (-) TimerEvent: {}
+[4.415835] (-) TimerEvent: {}
+[4.517999] (-) TimerEvent: {}
+[4.527863] (hsr_socket_driver) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable demo_training_jog_node\x1b[0m\n'}
+[4.618791] (-) TimerEvent: {}
+[4.694556] (hsr_socket_driver) StdoutLine: {'line': b'[ 60%] Built target demo_training_jog_node\n'}
+[4.718969] (-) TimerEvent: {}
+[4.819347] (-) TimerEvent: {}
+[4.919789] (-) TimerEvent: {}
+[5.020373] (-) TimerEvent: {}
+[5.120791] (-) TimerEvent: {}
+[5.221197] (-) TimerEvent: {}
+[5.321501] (-) TimerEvent: {}
+[5.368025] (hsr_socket_driver) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX executable demo_comm_api_training_node\x1b[0m\n'}
+[5.421688] (-) TimerEvent: {}
+[5.489586] (hsr_socket_driver) StdoutLine: {'line': b'[ 65%] Built target demo_comm_api_training_node\n'}
+[5.521783] (-) TimerEvent: {}
+[5.622143] (-) TimerEvent: {}
+[5.715084] (hsr_socket_driver) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable demo_sys_alarm_node\x1b[0m\n'}
+[5.722231] (-) TimerEvent: {}
+[5.822609] (-) TimerEvent: {}
+[5.859606] (hsr_socket_driver) StdoutLine: {'line': b'[ 70%] Built target demo_sys_alarm_node\n'}
+[5.922690] (-) TimerEvent: {}
+[6.002679] (hsr_socket_driver) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable demo_cartesian_move_node\x1b[0m\n'}
+[6.022795] (-) TimerEvent: {}
+[6.123159] (-) TimerEvent: {}
+[6.131090] (hsr_socket_driver) StdoutLine: {'line': b'[ 75%] Built target demo_cartesian_move_node\n'}
+[6.223328] (-) TimerEvent: {}
+[6.323818] (-) TimerEvent: {}
+[6.424131] (-) TimerEvent: {}
+[6.524427] (-) TimerEvent: {}
+[6.624754] (-) TimerEvent: {}
+[6.725105] (-) TimerEvent: {}
+[6.825463] (-) TimerEvent: {}
+[6.925818] (-) TimerEvent: {}
+[7.026145] (-) TimerEvent: {}
+[7.126517] (-) TimerEvent: {}
+[7.226942] (-) TimerEvent: {}
+[7.327250] (-) TimerEvent: {}
+[7.427564] (-) TimerEvent: {}
+[7.450714] (hsr_socket_driver) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable hsr_socket_driver_node\x1b[0m\n'}
+[7.527669] (-) TimerEvent: {}
+[7.537463] (hsr_socket_driver) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable demo_training_jog_home_node\x1b[0m\n'}
+[7.627832] (-) TimerEvent: {}
+[7.710944] (hsr_socket_driver) StdoutLine: {'line': b'[ 85%] Built target hsr_socket_driver_node\n'}
+[7.727912] (-) TimerEvent: {}
+[7.732031] (hsr_socket_driver) StdoutLine: {'line': b'[ 85%] Built target demo_training_jog_home_node\n'}
+[7.828022] (-) TimerEvent: {}
+[7.928337] (-) TimerEvent: {}
+[7.953048] (hsr_socket_driver) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable demo_training_move_joint_node\x1b[0m\n'}
+[8.028494] (-) TimerEvent: {}
+[8.127980] (hsr_socket_driver) StdoutLine: {'line': b'[ 90%] Built target demo_training_move_joint_node\n'}
+[8.128543] (-) TimerEvent: {}
+[8.228779] (-) TimerEvent: {}
+[8.329170] (-) TimerEvent: {}
+[8.429513] (-) TimerEvent: {}
+[8.529873] (-) TimerEvent: {}
+[8.630107] (-) TimerEvent: {}
+[8.730371] (-) TimerEvent: {}
+[8.830599] (-) TimerEvent: {}
+[8.930858] (-) TimerEvent: {}
+[9.031112] (-) TimerEvent: {}
+[9.131473] (-) TimerEvent: {}
+[9.231886] (-) TimerEvent: {}
+[9.332212] (-) TimerEvent: {}
+[9.432563] (-) TimerEvent: {}
+[9.532901] (-) TimerEvent: {}
+[9.633228] (-) TimerEvent: {}
+[9.656220] (hsr_socket_driver) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable keyboard_teleop_joint_node\x1b[0m\n'}
+[9.733361] (-) TimerEvent: {}
+[9.833816] (-) TimerEvent: {}
+[9.934171] (-) TimerEvent: {}
+[10.034473] (-) TimerEvent: {}
+[10.061265] (hsr_socket_driver) StdoutLine: {'line': b'[ 95%] Built target keyboard_teleop_joint_node\n'}
+[10.134604] (-) TimerEvent: {}
+[10.234881] (-) TimerEvent: {}
+[10.335150] (-) TimerEvent: {}
+[10.435463] (-) TimerEvent: {}
+[10.535779] (-) TimerEvent: {}
+[10.636126] (-) TimerEvent: {}
+[10.736480] (-) TimerEvent: {}
+[10.836840] (-) TimerEvent: {}
+[10.937210] (-) TimerEvent: {}
+[11.037628] (-) TimerEvent: {}
+[11.137942] (-) TimerEvent: {}
+[11.176904] (hsr_socket_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable demo_training_jog_single_node\x1b[0m\n'}
+[11.238128] (-) TimerEvent: {}
+[11.338404] (-) TimerEvent: {}
+[11.438729] (-) TimerEvent: {}
+[11.538582] (hsr_socket_driver) StdoutLine: {'line': b'[100%] Built target demo_training_jog_single_node\n'}
+[11.538799] (-) TimerEvent: {}
+[11.550231] (hsr_socket_driver) CommandEnded: {'returncode': 0}
+[11.551126] (hsr_socket_driver) JobProgress: {'identifier': 'hsr_socket_driver', 'progress': 'install'}
+[11.561744] (hsr_socket_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver'], 'cwd': '/home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'huashu'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/windsurf/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib:/home/huashu/co_605_arm/Hsc3DemoLinux/Hsc3Api/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/huashu/co_605_arm/Hsc3DemoLinux/Hsc3Api/lib:'), ('HOME', '/home/huashu'), ('CHROME_DESKTOP', 'windsurf.desktop'), ('OLDPWD', '/home/huashu'), ('TERM_PROGRAM_VERSION', '1.108.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/windsurf.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/windsurf/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/windsurf/windsurf'), ('MANAGERPID', '1219'), ('SYSTEMD_EXEC_PID', '1721'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '16350'), ('COLCON_PREFIX_PATH', '/home/huashu/co_605_arm/Hsc3DemoLinux/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'huashu'), ('JOURNAL_STREAM', '8:1561'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'huashu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDSURF_CASCADE_TERMINAL_KIND', 'inherit'), ('WINDOWPATH', '2'), ('WINDSURF_CASCADE_TERMINAL', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/huashu-Dell-G15-5520:@/tmp/.ICE-unix/1684,unix/huashu-Dell-G15-5520:/tmp/.ICE-unix/1684'), ('INVOCATION_ID', 'd64633420f004ed6bbd625321ee939cd'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8e36734391.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver:/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_moveit_config:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/huashu/co_605_arm/Hsc3DemoLinux/build/hsr_socket_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver:/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_moveit_config:/opt/ros/humble')]), 'shell': False}
+[11.571572] (hsr_socket_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.571832] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/libCommApi.so\n'}
+[11.572458] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/libHsc3Api.so\n'}
+[11.573288] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/libLogApi.so\n'}
+[11.573653] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/libhsr_hsc3_client.a\n'}
+[11.573895] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/hsr_socket_driver_node\n'}
+[11.575208] (hsr_socket_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/hsr_socket_driver_node" to "$ORIGIN/.."\n'}
+[11.575425] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_comm_api_training_node\n'}
+[11.575551] (hsr_socket_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_comm_api_training_node" to "$ORIGIN/.."\n'}
+[11.575635] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_training_jog_node\n'}
+[11.575799] (hsr_socket_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_training_jog_node" to "$ORIGIN/.."\n'}
+[11.575908] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_training_jog_single_node\n'}
+[11.578216] (hsr_socket_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_training_jog_single_node" to "$ORIGIN/.."\n'}
+[11.578366] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_training_jog_home_node\n'}
+[11.578831] (hsr_socket_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_training_jog_home_node" to "$ORIGIN/.."\n'}
+[11.578943] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_training_move_joint_node\n'}
+[11.579406] (hsr_socket_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_training_move_joint_node" to "$ORIGIN/.."\n'}
+[11.579573] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_cartesian_move_node\n'}
+[11.579694] (hsr_socket_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_cartesian_move_node" to "$ORIGIN/.."\n'}
+[11.579811] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_sys_alarm_node\n'}
+[11.579921] (hsr_socket_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/demo_sys_alarm_node" to "$ORIGIN/.."\n'}
+[11.580009] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/keyboard_teleop_joint_node\n'}
+[11.582409] (hsr_socket_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/lib/hsr_socket_driver/keyboard_teleop_joint_node" to ""\n'}
+[11.582565] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/include\n'}
+[11.582609] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/include/hsr_socket_driver\n'}
+[11.582644] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/include/hsr_socket_driver/hsc3_client.hpp\n'}
+[11.582678] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/launch\n'}
+[11.582714] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/launch/driver.launch.py\n'}
+[11.582752] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/launch/__pycache__\n'}
+[11.582784] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/launch/__pycache__/driver.launch.cpython-310.pyc\n'}
+[11.582858] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/config\n'}
+[11.582934] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/config/driver.yaml\n'}
+[11.582966] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/ament_index/resource_index/package_run_dependencies/hsr_socket_driver\n'}
+[11.582998] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/ament_index/resource_index/parent_prefix_path/hsr_socket_driver\n'}
+[11.583028] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/environment/ament_prefix_path.sh\n'}
+[11.583085] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/environment/ament_prefix_path.dsv\n'}
+[11.583119] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/environment/path.sh\n'}
+[11.583177] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/environment/path.dsv\n'}
+[11.583210] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/local_setup.bash\n'}
+[11.583242] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/local_setup.sh\n'}
+[11.583296] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/local_setup.zsh\n'}
+[11.583329] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/local_setup.dsv\n'}
+[11.583386] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/package.dsv\n'}
+[11.583421] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/ament_index/resource_index/packages/hsr_socket_driver\n'}
+[11.583479] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/cmake/hsr_socket_driverConfig.cmake\n'}
+[11.583511] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/cmake/hsr_socket_driverConfig-version.cmake\n'}
+[11.583561] (hsr_socket_driver) StdoutLine: {'line': b'-- Installing: /home/huashu/co_605_arm/Hsc3DemoLinux/install/hsr_socket_driver/share/hsr_socket_driver/package.xml\n'}
+[11.585502] (hsr_socket_driver) CommandEnded: {'returncode': 0}
+[11.602031] (hsr_socket_driver) JobEnded: {'identifier': 'hsr_socket_driver', 'rc': 0}
+[11.602639] (-) EventReactorShutdown: {}

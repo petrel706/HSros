@@ -17,8 +17,8 @@ static void forceDin0Ready(Hsc3::Proxy::ProxyIO & pIo);
 static bool moveJointRelativeDeg(Hsc3::Proxy::ProxyMotion & pMot, int8_t gpId, int8_t axis, double deltaDeg);
 
 static const int8_t kGpId = 0;
-static const int8_t kAxis = 1;
-static const double kDeltaDeg = +13.0;
+static const int8_t kAxis = 5;
+static const double kDeltaDeg = -15.0;
 static const int32_t kJogVord = 20;
 
 static const int32_t kForceDinPort = 0;
@@ -97,6 +97,7 @@ static void forceDin0Ready(Hsc3::Proxy::ProxyIO & pIo)
 
 static bool moveJointRelativeDeg(Hsc3::Proxy::ProxyMotion & pMot, int8_t gpId, int8_t axis, double deltaDeg)
 {
+    // Get current position
     JntData cur;
     const auto r1 = pMot.getJntData(gpId, cur);
     if (r1 != 0)
@@ -110,25 +111,65 @@ static bool moveJointRelativeDeg(Hsc3::Proxy::ProxyMotion & pMot, int8_t gpId, i
         return false;
     }
 
-    JntData target = cur;
-    target[static_cast<size_t>(axis)] += deltaDeg;
+    const double startPos = cur[static_cast<size_t>(axis)];
+    const double targetPos = startPos + deltaDeg;
+    
+    std::cout << "Current axis " << static_cast<int>(axis) << " pos: " << startPos << " deg" << std::endl;
+    std::cout << "Target pos: " << targetPos << " deg" << std::endl;
 
-    GeneralPos p;
-    p.isJoint = true;
-    p.ufNum = -1;
-    p.utNum = -1;
-    p.config = 0;
-    p.vecPos = target;
+    // Determine direction
+    DirectType direction = (deltaDeg > 0) ? POSITIVE : NEGATIVE;
+    const double absDelta = (deltaDeg > 0) ? deltaDeg : -deltaDeg;
 
-    const auto r2 = pMot.moveTo(gpId, p, false);
+    // Start jogging
+    std::cout << "Starting jog in " << (direction == POSITIVE ? "POSITIVE" : "NEGATIVE") << " direction..." << std::endl;
+    const auto r2 = pMot.startJog(gpId, axis, direction);
     if (r2 != 0)
     {
-        std::cout << "moveTo failed, ret=" << static_cast<unsigned long long>(r2) << std::endl;
+        std::cout << "startJog failed, ret=" << static_cast<unsigned long long>(r2) << std::endl;
         return false;
     }
 
-    waitDone(pMot);
-    return true;
+    // Monitor position and stop when target reached
+    const int maxLoops = 1000; // 50 seconds max
+    bool reached = false;
+    
+    for (int i = 0; i < maxLoops; ++i)
+    {
+        usleep(50 * 1000); // 50ms
+        
+        JntData current;
+        if (pMot.getJntData(gpId, current) == 0 && static_cast<size_t>(axis) < current.size())
+        {
+            const double currentPos = current[static_cast<size_t>(axis)];
+            const double moved = (direction == POSITIVE) ? (currentPos - startPos) : (startPos - currentPos);
+            
+            // Print progress every 1 second
+            if ((i % 20) == 0)
+            {
+                std::cout << "Progress: " << currentPos << " deg (moved " << moved << " deg)" << std::endl;
+            }
+            
+            // Check if target reached
+            if (moved >= absDelta - 0.5) // 0.5 degree tolerance
+            {
+                reached = true;
+                std::cout << "Target reached at " << currentPos << " deg" << std::endl;
+                break;
+            }
+        }
+    }
+
+    // Stop jogging
+    const auto r3 = pMot.stopJog(gpId);
+    std::cout << "stopJog ret=" << static_cast<unsigned long long>(r3) << std::endl;
+    
+    if (!reached)
+    {
+        std::cout << "Warning: Target not reached within timeout" << std::endl;
+    }
+
+    return reached;
 }
 
 bool connectIPC(Hsc3::Comm::CommApi &cmApi, std::string strIP, uint16_t uPort)

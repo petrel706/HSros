@@ -1,0 +1,4 @@
+source;share/hsr_socket_driver/local_setup.bash
+source;share/hsr_socket_driver/local_setup.dsv
+source;share/hsr_socket_driver/local_setup.sh
+source;share/hsr_socket_driver/local_setup.zsh

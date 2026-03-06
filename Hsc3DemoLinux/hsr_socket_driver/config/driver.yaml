@@ -1,0 +1,23 @@
+hsr_socket_driver:
+  ros__parameters:
+    ip: "10.10.57.213"
+    port: 23234
+    gp_id: 0
+
+    # 安全相关：默认不强制覆盖 DI（需要时再打开）
+    force_virtual_din: false
+    force_din_port: 0
+    force_din_value: true
+    force_din_hold_ms: 2000
+    allow_override_real_din: false
+    reset_din_on_exit: false
+
+    enable_on_start: true
+    publish_rate_hz: 50.0
+
+    # MoveIt2 默认期望 /<controller_name>/follow_joint_trajectory
+    trajectory_action_name: "hsr_arm_controller/follow_joint_trajectory"
+
+    # 需要与 MoveIt2 / URDF 的 joint 名字一致
+    joint_names: ["joint1", "joint2", "joint3", "joint4", "joint5", "joint6"]
+

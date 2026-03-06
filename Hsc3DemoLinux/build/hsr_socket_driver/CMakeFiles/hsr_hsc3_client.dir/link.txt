@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhsr_hsc3_client.a CMakeFiles/hsr_hsc3_client.dir/src/hsc3_client.cpp.o
+/usr/bin/ranlib libhsr_hsc3_client.a
